@@ -8,43 +8,32 @@
 </head>
 <body>
     <div class="survey-container">
+        
         <div class="survey-form">
+            <h1>CUSTOMER SERVEY FORM</h1>
             <form id="surveyForm">
                 
-               First Name : <input type="text" id="firstName" placeholder="First Name" required>
-
-                <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" required>
-
-                <label for="dob">Date of Birth:</label>
-                <input type="date" id="dob" required>
-
-                <label for="country">Country:</label>
+               <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+                <input type="date" id="dob" placeholder="DOB" required>
                 <select id="country" required>
                     <option value="" disabled selected>Select Country</option>
                     <option value="usa">USA</option>
                     <option value="canada">Canada</option>
                     <!-- Add more countries as needed -->
                 </select>
-
-                <label>Gender:</label>
-                <div class="gender-checkbox">
-                    <label><input type="checkbox" name="gender" value="male"> Male</label>
-                    <label><input type="checkbox" name="gender" value="female"> Female</label>
+                <div class="radio-button">
+                    <span>Gender </span>
+                     <input type="radio" name="gender" value="male">Male
+                     <input type="radio" name="gender" value="female">Female
                 </div>
-
-                <label for="profession">Profession:</label>
-                <input type="text" id="profession" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" required>
-
-                <label for="mobileNumber">Mobile Number:</label>
-                <input type="tel" id="mobileNumber" required>
+                <input type="text" id="profession" placeholder="Profession" required>
+                <input type="email" id="email" placeholder="Email" required >
+                <input type="tel" id="mobileNumber" placeholder="Mobile No." required>
 
                 <div class="buttons">
-                    <button type="button" onclick="submitForm()">Submit</button>
-                    <button type="button" onclick="resetForm()">Reset</button>
+                    <button type="button" onclick="submitForm()">SUBMIT</button>
+                    <button type="button" onclick="resetForm()" class="reset-button">RESET</button>
                 </div>
             </form>
         </div>

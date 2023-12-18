@@ -2,17 +2,20 @@ body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+h1{
+    text-align: center;
+}
 
 .survey-container {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #07b4cb;
 }
 
 .survey-form {
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -38,10 +41,10 @@ select {
     font-size: 14px;
 }
 
-.gender-checkbox {
+.radio-button{
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 15px;
+    width:100%;
+    margin-bottom: 10px;
 }
 
 .buttons {
@@ -60,9 +63,14 @@ button {
     border-radius: 4px;
     transition: background-color 0.3s;
 }
+.reset-button{
+    background-color: rgb(173, 10, 10);
+    color: white;
+}
 
 button:hover {
-    background-color: #45a049;
+    background-color: #3a56f3;
+    color: white;
 }
 
 .popup {
